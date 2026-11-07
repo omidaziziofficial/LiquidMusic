@@ -1,0 +1,59 @@
+name: Build LiquidMusic iOS IPA
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & Package LiquidMusic IPA
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Verify Xcode & Swift
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Locate Project & Build Archive
+        run: |
+          if [ -d "LiquidMusic-iOS/LiquidMusic.xcodeproj" ]; then
+            cd LiquidMusic-iOS
+          fi
+          echo "Current directory: $(pwd)"
+          ls -la
+          
+          xcodebuild clean archive \
+            -project LiquidMusic.xcodeproj \
+            -scheme LiquidMusic \
+            -destination "generic/platform=iOS" \
+            -archivePath "build/LiquidMusic.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            PROVISIONING_PROFILE=""
+
+      - name: Package Payload into IPA
+        run: |
+          if [ -d "LiquidMusic-iOS/build" ]; then
+            cd LiquidMusic-iOS
+          fi
+          mkdir -p build/Payload
+          cp -r build/LiquidMusic.xcarchive/Products/Applications/LiquidMusic.app build/Payload/
+          cd build
+          zip -r -y LiquidMusic.ipa Payload
+          echo "=== LiquidMusic.ipa successfully generated ==="
+          ls -lh LiquidMusic.ipa
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LiquidMusic-iOS-IPA
+          path: "**/build/LiquidMusic.ipa"
+          retention-days: 14
