@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001012B98000100000001 /* LiquidMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000012B98000100000001 /* LiquidMusicApp.swift */; };
+		AA0001022B98000100000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0000022B98000100000002 /* Assets.xcassets */; };
+		AA0001032B98000100000003 /* LiquidTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000032B98000100000003 /* LiquidTheme.swift */; };
+		AA0001042B98000100000004 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000042B98000100000004 /* Song.swift */; };
+		AA0001052B98000100000005 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000052B98000100000005 /* Album.swift */; };
+		AA0001062B98000100000006 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000062B98000100000006 /* Enums.swift */; };
+		AA0001072B98000100000007 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000072B98000100000007 /* Playlist.swift */; };
+		AA0001082B98000100000008 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000082B98000100000008 /* Lyrics.swift */; };
+		AA0001092B98000100000009 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000092B98000100000009 /* AppSettings.swift */; };
+		AA0001102B98000100000010 /* LibraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000102B98000100000010 /* LibraryData.swift */; };
+		AA0001112B98000100000011 /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000112B98000100000011 /* PlayerState.swift */; };
+		AA0001122B98000100000012 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000122B98000100000012 /* AudioPlayerService.swift */; };
+		AA0001132B98000100000013 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000132B98000100000013 /* LibraryStore.swift */; };
+		AA0001142B98000100000014 /* LyricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000142B98000100000014 /* LyricsService.swift */; };
+		AA0001152B98000100000015 /* PlaylistArchiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000152B98000100000015 /* PlaylistArchiveService.swift */; };
+		AA0001162B98000100000016 /* VoiceAssistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000162B98000100000016 /* VoiceAssistantService.swift */; };
+		AA0001172B98000100000017 /* MainContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000172B98000100000017 /* MainContainerView.swift */; };
+		AA0001182B98000100000018 /* ArtworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000182B98000100000018 /* ArtworkImageView.swift */; };
+		AA0001192B98000100000019 /* GlassTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000192B98000100000019 /* GlassTabBar.swift */; };
+		AA0001202B98000100000020 /* MarqueeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000202B98000100000020 /* MarqueeText.swift */; };
+		AA0001212B98000100000021 /* MiniPlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000212B98000100000021 /* MiniPlayerBar.swift */; };
+		AA0001222B98000100000022 /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000222B98000100000022 /* SongsView.swift */; };
+		AA0001232B98000100000023 /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000232B98000100000023 /* SongRowView.swift */; };
+		AA0001242B98000100000024 /* SortSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000242B98000100000024 /* SortSheetView.swift */; };
+		AA0001252B98000100000025 /* LibraryHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000252B98000100000025 /* LibraryHomeView.swift */; };
+		AA0001262B98000100000026 /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000262B98000100000026 /* AlbumsView.swift */; };
+		AA0001272B98000100000027 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000272B98000100000027 /* ArtistsView.swift */; };
+		AA0001282B98000100000028 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000282B98000100000028 /* CollectionDetailView.swift */; };
+		AA0001292B98000100000029 /* FoldersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000292B98000100000029 /* FoldersView.swift */; };
+		AA0001302B98000100000030 /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000302B98000100000030 /* PlaylistsView.swift */; };
+		AA0001312B98000100000031 /* PlaylistDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000312B98000100000031 /* PlaylistDialogs.swift */; };
+		AA0001322B98000100000032 /* PlaylistCoverSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000322B98000100000032 /* PlaylistCoverSheet.swift */; };
+		AA0001332B98000100000033 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000332B98000100000033 /* SearchView.swift */; };
+		AA0001342B98000100000034 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000342B98000100000034 /* SettingsView.swift */; };
+		AA0001352B98000100000035 /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000352B98000100000035 /* NowPlayingView.swift */; };
+		AA0001362B98000100000036 /* QueueAndEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000362B98000100000036 /* QueueAndEqualizer.swift */; };
+		AA0001372B98000100000037 /* SleepTimerSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000372B98000100000037 /* SleepTimerSheets.swift */; };
+		AA0001382B98000100000038 /* SongActionMenuSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000382B98000100000038 /* SongActionMenuSheet.swift */; };
+		AA0001392B98000100000039 /* InAppBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000392B98000100000039 /* InAppBrowserView.swift */; };
+		AA0001402B98000100000040 /* LiquidMusicWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000402B98000100000040 /* LiquidMusicWidgets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000002B98000100000000 /* LiquidMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000012B98000100000001 /* LiquidMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidMusicApp.swift; sourceTree = "<group>"; };
+		AA0000022B98000100000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0000032B98000100000003 /* LiquidTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidTheme.swift; sourceTree = "<group>"; };
+		AA0000042B98000100000004 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		AA0000052B98000100000005 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		AA0000062B98000100000006 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		AA0000072B98000100000007 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		AA0000082B98000100000008 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
+		AA0000092B98000100000009 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		AA0000102B98000100000010 /* LibraryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryData.swift; sourceTree = "<group>"; };
+		AA0000112B98000100000011 /* PlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
+		AA0000122B98000100000012 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		AA0000132B98000100000013 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
+		AA0000142B98000100000014 /* LyricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsService.swift; sourceTree = "<group>"; };
+		AA0000152B98000100000015 /* PlaylistArchiveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistArchiveService.swift; sourceTree = "<group>"; };
+		AA0000162B98000100000016 /* VoiceAssistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantService.swift; sourceTree = "<group>"; };
+		AA0000172B98000100000017 /* MainContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerView.swift; sourceTree = "<group>"; };
+		AA0000182B98000100000018 /* ArtworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkImageView.swift; sourceTree = "<group>"; };
+		AA0000192B98000100000019 /* GlassTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTabBar.swift; sourceTree = "<group>"; };
+		AA0000202B98000100000020 /* MarqueeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeText.swift; sourceTree = "<group>"; };
+		AA0000212B98000100000021 /* MiniPlayerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerBar.swift; sourceTree = "<group>"; };
+		AA0000222B98000100000022 /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		AA0000232B98000100000023 /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
+		AA0000242B98000100000024 /* SortSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortSheetView.swift; sourceTree = "<group>"; };
+		AA0000252B98000100000025 /* LibraryHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryHomeView.swift; sourceTree = "<group>"; };
+		AA0000262B98000100000026 /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		AA0000272B98000100000027 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
+		AA0000282B98000100000028 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		AA0000292B98000100000029 /* FoldersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersView.swift; sourceTree = "<group>"; };
+		AA0000302B98000100000030 /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
+		AA0000312B98000100000031 /* PlaylistDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDialogs.swift; sourceTree = "<group>"; };
+		AA0000322B98000100000032 /* PlaylistCoverSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCoverSheet.swift; sourceTree = "<group>"; };
+		AA0000332B98000100000033 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AA0000342B98000100000034 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA0000352B98000100000035 /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		AA0000362B98000100000036 /* QueueAndEqualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueAndEqualizer.swift; sourceTree = "<group>"; };
+		AA0000372B98000100000037 /* SleepTimerSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimerSheets.swift; sourceTree = "<group>"; };
+		AA0000382B98000100000038 /* SongActionMenuSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongActionMenuSheet.swift; sourceTree = "<group>"; };
+		AA0000392B98000100000039 /* InAppBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppBrowserView.swift; sourceTree = "<group>"; };
+		AA0000402B98000100000040 /* LiquidMusicWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidMusicWidgets.swift; sourceTree = "<group>"; };
+		AA0000412B98000100000041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0000422B98000100000042 /* LiquidMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiquidMusic.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000F02B980001000000F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000E02B980001000000E0 = {
+			isa = PBXGroup;
+			children = (
+				AA0000E12B980001000000E1 /* LiquidMusic */,
+				AA0000002B98000100000000 /* LiquidMusic.app */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000E12B980001000000E1 /* LiquidMusic */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000E22B980001000000E2 /* App */,
+				AA0000E32B980001000000E3 /* Theme */,
+				AA0000E42B980001000000E4 /* Models */,
+				AA0000E52B980001000000E5 /* Services */,
+				AA0000E62B980001000000E6 /* Views */,
+				AA0000E72B980001000000E7 /* Widgets */,
+				AA0000022B98000100000002 /* Assets.xcassets */,
+			);
+			path = LiquidMusic;
+			sourceTree = "<group>";
+		};
+		AA0000E22B980001000000E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000012B98000100000001 /* LiquidMusicApp.swift */,
+				AA0000412B98000100000041 /* Info.plist */,
+				AA0000422B98000100000042 /* LiquidMusic.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA0000E32B980001000000E3 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000032B98000100000003 /* LiquidTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AA0000E42B980001000000E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000042B98000100000004 /* Song.swift */,
+				AA0000052B98000100000005 /* Album.swift */,
+				AA0000062B98000100000006 /* Enums.swift */,
+				AA0000072B98000100000007 /* Playlist.swift */,
+				AA0000082B98000100000008 /* Lyrics.swift */,
+				AA0000092B98000100000009 /* AppSettings.swift */,
+				AA0000102B98000100000010 /* LibraryData.swift */,
+				AA0000112B98000100000011 /* PlayerState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0000E52B980001000000E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000122B98000100000012 /* AudioPlayerService.swift */,
+				AA0000132B98000100000013 /* LibraryStore.swift */,
+				AA0000142B98000100000014 /* LyricsService.swift */,
+				AA0000152B98000100000015 /* PlaylistArchiveService.swift */,
+				AA0000162B98000100000016 /* VoiceAssistantService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0000E62B980001000000E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000172B98000100000017 /* MainContainerView.swift */,
+				AA0000182B98000100000018 /* ArtworkImageView.swift */,
+				AA0000192B98000100000019 /* GlassTabBar.swift */,
+				AA0000202B98000100000020 /* MarqueeText.swift */,
+				AA0000212B98000100000021 /* MiniPlayerBar.swift */,
+				AA0000222B98000100000022 /* SongsView.swift */,
+				AA0000232B98000100000023 /* SongRowView.swift */,
+				AA0000242B98000100000024 /* SortSheetView.swift */,
+				AA0000252B98000100000025 /* LibraryHomeView.swift */,
+				AA0000262B98000100000026 /* AlbumsView.swift */,
+				AA0000272B98000100000027 /* ArtistsView.swift */,
+				AA0000282B98000100000028 /* CollectionDetailView.swift */,
+				AA0000292B98000100000029 /* FoldersView.swift */,
+				AA0000302B98000100000030 /* PlaylistsView.swift */,
+				AA0000312B98000100000031 /* PlaylistDialogs.swift */,
+				AA0000322B98000100000032 /* PlaylistCoverSheet.swift */,
+				AA0000332B98000100000033 /* SearchView.swift */,
+				AA0000342B98000100000034 /* SettingsView.swift */,
+				AA0000352B98000100000035 /* NowPlayingView.swift */,
+				AA0000362B98000100000036 /* QueueAndEqualizer.swift */,
+				AA0000372B98000100000037 /* SleepTimerSheets.swift */,
+				AA0000382B98000100000038 /* SongActionMenuSheet.swift */,
+				AA0000392B98000100000039 /* InAppBrowserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA0000E72B980001000000E7 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000402B98000100000040 /* LiquidMusicWidgets.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000D02B980001000000D0 /* LiquidMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000C02B980001000000C0 /* Build configuration list for PBXNativeTarget "LiquidMusic" */;
+			buildPhases = (
+				AA0000F12B980001000000F1 /* Sources */,
+				AA0000F02B980001000000F0 /* Frameworks */,
+				AA0000F22B980001000000F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquidMusic;
+			productName = LiquidMusic;
+			productReference = AA0000002B98000100000000 /* LiquidMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000A02B980001000000A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0000D02B980001000000D0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000B02B980001000000B0 /* Build configuration list for PBXProject "LiquidMusic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000E02B980001000000E0;
+			productRefGroup = AA0000E02B980001000000E0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000D02B980001000000D0 /* LiquidMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000F22B980001000000F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001022B98000100000002 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000F12B980001000000F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001012B98000100000001 /* LiquidMusicApp.swift in Sources */,
+				AA0001032B98000100000003 /* LiquidTheme.swift in Sources */,
+				AA0001042B98000100000004 /* Song.swift in Sources */,
+				AA0001052B98000100000005 /* Album.swift in Sources */,
+				AA0001062B98000100000006 /* Enums.swift in Sources */,
+				AA0001072B98000100000007 /* Playlist.swift in Sources */,
+				AA0001082B98000100000008 /* Lyrics.swift in Sources */,
+				AA0001092B98000100000009 /* AppSettings.swift in Sources */,
+				AA0001102B98000100000010 /* LibraryData.swift in Sources */,
+				AA0001112B98000100000011 /* PlayerState.swift in Sources */,
+				AA0001122B98000100000012 /* AudioPlayerService.swift in Sources */,
+				AA0001132B98000100000013 /* LibraryStore.swift in Sources */,
+				AA0001142B98000100000014 /* LyricsService.swift in Sources */,
+				AA0001152B98000100000015 /* PlaylistArchiveService.swift in Sources */,
+				AA0001162B98000100000016 /* VoiceAssistantService.swift in Sources */,
+				AA0001172B98000100000017 /* MainContainerView.swift in Sources */,
+				AA0001182B98000100000018 /* ArtworkImageView.swift in Sources */,
+				AA0001192B98000100000019 /* GlassTabBar.swift in Sources */,
+				AA0001202B98000100000020 /* MarqueeText.swift in Sources */,
+				AA0001212B98000100000021 /* MiniPlayerBar.swift in Sources */,
+				AA0001222B98000100000022 /* SongsView.swift in Sources */,
+				AA0001232B98000100000023 /* SongRowView.swift in Sources */,
+				AA0001242B98000100000024 /* SortSheetView.swift in Sources */,
+				AA0001252B98000100000025 /* LibraryHomeView.swift in Sources */,
+				AA0001262B98000100000026 /* AlbumsView.swift in Sources */,
+				AA0001272B98000100000027 /* ArtistsView.swift in Sources */,
+				AA0001282B98000100000028 /* CollectionDetailView.swift in Sources */,
+				AA0001292B98000100000029 /* FoldersView.swift in Sources */,
+				AA0001302B98000100000030 /* PlaylistsView.swift in Sources */,
+				AA0001312B98000100000031 /* PlaylistDialogs.swift in Sources */,
+				AA0001322B98000100000032 /* PlaylistCoverSheet.swift in Sources */,
+				AA0001332B98000100000033 /* SearchView.swift in Sources */,
+				AA0001342B98000100000034 /* SettingsView.swift in Sources */,
+				AA0001352B98000100000035 /* NowPlayingView.swift in Sources */,
+				AA0001362B98000100000036 /* QueueAndEqualizer.swift in Sources */,
+				AA0001372B98000100000037 /* SleepTimerSheets.swift in Sources */,
+				AA0001382B98000100000038 /* SongActionMenuSheet.swift in Sources */,
+				AA0001392B98000100000039 /* InAppBrowserView.swift in Sources */,
+				AA0001402B98000100000040 /* LiquidMusicWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000B12B980001000000B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000B22B980001000000B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0000C12B980001000000C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LiquidMusic/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.music;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0000C22B980001000000C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LiquidMusic/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidglass.music;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000B02B980001000000B0 /* Build configuration list for PBXProject "LiquidMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000B12B980001000000B1 /* Debug */,
+				AA0000B22B980001000000B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000C02B980001000000C0 /* Build configuration list for PBXNativeTarget "LiquidMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000C12B980001000000C1 /* Debug */,
+				AA0000C22B980001000000C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA0000A02B980001000000A0 /* Project object */;
+}
