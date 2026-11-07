@@ -14,9 +14,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Select Xcode
+      - name: Verify Environment
         run: |
-          sudo xcode-select -switch /Applications/Xcode_15.4.app/Contents/Developer || true
           xcodebuild -version
           swift --version
 
