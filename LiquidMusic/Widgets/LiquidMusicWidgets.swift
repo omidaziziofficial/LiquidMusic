@@ -11,6 +11,7 @@ public struct MusicWidgetEntry: TimelineEntry {
 }
 
 public struct MusicWidgetProvider: TimelineProvider {
+    public init() {}
     public func placeholder(in context: Context) -> MusicWidgetEntry {
         MusicWidgetEntry(date: Date(), title: "Liquid Sound", artist: "Liquid Music", album: "Glass Era", isPlaying: true, progress: 0.45)
     }
@@ -167,6 +168,7 @@ public struct TurntableVinylWidgetView: View {
 
 // MARK: - Widget Definitions
 public struct LiquidMusicWidget: Widget {
+    public init() {}
     public let kind: String = "LiquidMusicWidget"
     
     public var body: some WidgetConfiguration {

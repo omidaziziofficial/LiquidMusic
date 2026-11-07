@@ -157,7 +157,7 @@ public final class LibraryStore: ObservableObject {
                                 albumId: Int64(item.albumPersistentID),
                                 duration: durationMs,
                                 size: 0,
-                                dateAdded: Int64(item.value(forProperty: MPMediaItemPropertyDateAdded) as? Date ?? Date()).timeIntervalSince1970,
+                                dateAdded: Int64(((item.value(forProperty: MPMediaItemPropertyDateAdded) as? Date) ?? Date()).timeIntervalSince1970),
                                 path: assetURL.path,
                                 folder: "Apple Music",
                                 track: item.albumTrackNumber,
